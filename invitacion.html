@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación a comer ceviche</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #006994, #00a8cc, #f4f9f9);
+      overflow: hidden;
+    }
+
+    .invitacion {
+      width: 90%;
+      max-width: 500px;
+      padding: 45px 30px;
+      text-align: center;
+      color: #073b4c;
+      background: rgba(255, 255, 255, 0.94);
+      border-radius: 30px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ola {
+      position: absolute;
+      left: -10%;
+      width: 120%;
+      height: 100px;
+      background: #00a8cc;
+      border-radius: 50%;
+      opacity: 0.15;
+    }
+
+    .ola.arriba {
+      top: -65px;
+    }
+
+    .ola.abajo {
+      bottom: -65px;
+      background: #006994;
+    }
+
+    .emoji {
+      font-size: 70px;
+      margin-bottom: 15px;
+      animation: flotar 3s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 38px;
+      color: #006994;
+      margin-bottom: 10px;
+    }
+
+    .mabo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #ef8354;
+      margin-bottom: 20px;
+    }
+
+    .mensaje {
+      font-size: 19px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .datos {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 25px 0;
+    }
+
+    .dato {
+      background: #e8f8fb;
+      padding: 15px 20px;
+      border-radius: 15px;
+      min-width: 130px;
+      box-shadow: 0 5px 12px rgba(0, 105, 148, 0.1);
+    }
+
+    .dato span {
+      display: block;
+      font-size: 13px;
+      color: #52727b;
+      margin-bottom: 5px;
+    }
+
+    .dato strong {
+      font-size: 18px;
+      color: #006994;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 14px 30px;
+      color: white;
+      background: #ef8354;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: 0.3s;
+      box-shadow: 0 8px 18px rgba(239, 131, 84, 0.35);
+    }
+
+    .boton:hover {
+      transform: translateY(-3px) scale(1.03);
+      background: #e76f45;
+    }
+
+    .despedida {
+      margin-top: 25px;
+      font-style: italic;
+      color: #52727b;
+    }
+
+    @keyframes flotar {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 31px;
+      }
+
+      .mabo {
+        font-size: 23px;
+      }
+
+      .mensaje {
+        font-size: 17px;
+      }
+
+      .invitacion {
+        padding: 35px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="invitacion">
+
+    <div class="ola arriba"></div>
+
+    <div class="emoji">🐟🍋🌊</div>
+
+    <h1>¡Mabo, estás invitado!</h1>
+
+    <div class="mabo">A comer un delicioso ceviche 🐟</div>
+
+    <p class="mensaje">
+      Porque un buen ceviche siempre sabe mejor
+      acompañado de una buena compañía. 😋
+      <br><br>
+      ¡Espero que puedas venir!
+    </p>
+
+    <div class="datos">
+      <div class="dato">
+        <span>📅 FECHA</span>
+        <strong>02/09/2026</strong>
+      </div>
+
+      <div class="dato">
+        <span>⏰ HORA</span>
+        <strong>6:30 PM</strong>
+      </div>
+    </div>
+
+    <a href="#" class="boton">
+      ¡Acepto la invitación! 💙
+    </a>
+
+    <p class="despedida">
+      Prepárate para el ceviche, Mabo. 🍋🐟
+    </p>
+
+    <div class="ola abajo"></div>
+
+  </div>
+
+</body>
+</html>
